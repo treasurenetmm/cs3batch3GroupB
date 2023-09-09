@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Drinks</title>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+                body{box-sizing: border-box;
+                    background-image: url(image/f.jpg); 
+                    background-position: center; background-repeat: no-repeat;
+                    background-size: cover;
+                    width: auto; height: 100%;}
+
+    .flex-container{display: flex; justify-content: space-around; flex-direction: row;}
+
+    .fordiv        {display: flex; flex-direction: column; margin: 90px 0px 0px 20px}
+
+    .fordiv2       {display: flex; flex-direction: row;  margin: 10px 0px; padding: 0px 10px 0px 0px;
+                    border: 2px solid rgb(134, 10, 6); background-color: rgb(221, 218, 218);
+                    border-radius: 0px 20px 20px 0px; height: 300px;}
+
+    .fordiv3       {display: flex; flex-direction: row;  margin: 10px 0px; padding: 0px 70px 0px 0px;
+                    border: 2px solid rgb(134, 10, 6); background-color: rgb(221, 218, 218);
+                    border-radius: 0px 20px 20px 0px; height: 300px;}
+
+                    h2{padding: 50px 0px 50px 10px; color: rgb(0, 0, 0);}
+                    
+        .container      {width: 100%; text-align: justify; margin: auto;}
+
+        .header        {padding: 0px;
+                        font-weight: bold; text-align: center;
+                        background-color: rgb(94, 91, 91); color: white;
+                        font-family: Arial, Helvetica, sans-serif;
+                        letter-spacing: 1px; opacity: 0.8;
+                        margin: 0; top:0; left: 0;
+                        width: 100%; float: right; position: fixed; 
+                        overflow: visible;}
+
+        .header a      {float: right; font-size: 25px;
+                        color: white; text-align: center; margin: 0px 5px;
+                        padding: 15px 30px 20px 30px; text-decoration: none;}
+
+        .dropdown      {float: right; overflow: hidden;}
+
+        .dropdown a:active{ background-color: #ddd;}
+
+    .dropdown .dropbtn {cursor: pointer; font-size: 25px;  
+                        border: none; outline: none;
+                        color: white; padding: 15px 30px 20px 30px;
+                        background-color: inherit; font-family: inherit;
+                        margin: 0px 5px;}
+
+.header a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {background-color: rgb(54, 50, 50);}
+
+    .dropdown-content   {display: none; position: absolute;
+                        background-color: #f9f9f9; min-width: 145px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+
+.dropdown-content a     {float: none; color: black;
+                        padding: 12px 16px; text-decoration: none;
+                        display: block; text-align: left;}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.show                   {margin:60px 5px 0px 5px; display: block;}
+
+                    ul  {margin-right: 10px;}
+
+        .active         {background: #c2c2c2;}
+    </style>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <ul>
+                <img src="image/gh4.png" alt="treasure net" width="150px" height="55px">
+                <a href="contact.html">Contact</a>
+                <a href="fpabout.html">About</a>
+                <a href="booking.html">Booking</a>
+
+                <div class="dropdown active">
+                        <a class="dropbtn" onclick="myFunction()">Menu<i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="fpmenu1.html">Food</a><hr>
+                        <a href="fpdrink1.html">Drinks</a>
+                    </div>
+                </div>
+                        
+                <a href="index.html">Home</a>
+            </ul>                
+        </div>
+      </div>
+
+  <script>
+
+      function myFunction() {document.getElementById("myDropdown").classList.toggle("show");}
+
+      window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');}}
+              }}
+
+  </script>
+
+<div class="flex-container">
+    <div  class="fordiv">
+
+        <div class="fordiv3">    
+            <img src="image/for project/for drinks/juice(ar).jpg" width="250px" height="300px">
+            <h2>Avocado fruit<br>(ထောပတ်သီး)<br>Juice<br>3500Ks</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(mg).jpg" width="250px" height="300px">
+            <h2>Mango fruit<br>(သရက်သီး)<br>Juice<br>4500Ks</h2>
+        </div>
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(dr).jpg" width="250px" height="300px">
+            <h2>Dragon fruit<br>(နဂါးမောက်သီး)<br>Juice<br>4300Ks</h2>
+        </div>
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(ap)1.jpg" width="250px" height="300px">
+            <h2>Apple fruit<br>(ပန်းသီး)<br>Juice/Soda<br>2800Ks/3500Ks</h2>
+        </div>
+               
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(pa).jpg" width="250px" height="300px">
+            <h2>Pineapple fruit<br>(နာနတ်သီး)<br>Juice/Soda<br>3500Ks/4200Ks</h2>
+        </div>
+                
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(bb)1.jpg" width="250px" height="300px">
+            <h2>Blueberry fruit<br>(ဘယ်လူးဘယ်ရီသီး)<br>Juice/Soda<br>4300Ks/4800Ks</h2>
+        </div>
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(gp)1.jpg" width="250px" height="300px">
+            <h2>Grapes fruit<br>(စပျစ်သီး)<br>Juice/Soda<br>3600Ks/4000Ks</h2>
+        </div>
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(or).jpg" width="250px" height="300px">
+            <h2>Orange fruit<br>(လိမ္မော်သီး)<br>Juice/Soda<br>3000Ks/4200Ks</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/wine(apple).jpg" width="250px" height="300px">
+            <h2>Apple Wine<br>(ပန်းသီးဝိုင်)<br>2013-2018<br> US$ 16.21</h2>
+        </div>
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/wine(strawberry).jpg" width="250px" height="300px">
+            <h2>Strawberry Wine<br>(စတော်ဘယ်ရီဝိုင်)<br>2002-2005<br>US$ 14.15</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/Baiji.jpg" width="250px" height="300px">
+            <h2>Baijiu<br>(တရုတ်အရက်)<br>US$ 51.99 </h2>
+        </div>
+
+    </div>
+
+    <div class="fordiv">
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(kw).jpg" width="250px" height="300px">
+            <h2>Kiwi fruit<br>(ကီဝိသီး)<br>Juice<br>4500Ks</h2>
+        </div>
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(cr).jpg" width="250px" height="300px">
+            <h2>Carrot fruit<br>(မုန်လာဥနီ)<br>Juice<br>4000Ks</h2>
+        </div>
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(ch).jpg" width="250px" height="300px">
+            <h2>Cherry fruit<br>(ချယ်ရီသီး)<br>Juice<br>4000Ks</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(st).jpg" width="250px" height="300px">
+            <h2>Strawberry fruit<br>(စတော်ဘယ်ရီသီး)<br>Juice/Soda<br>4500Ks/5000Ks</h2>
+        </div>    
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(pw)1.jpg" width="250px" height="300px">
+            <h2>Passionfruit<br>(ဖျော်ရည်သီး)<br>Juice/Soda<br>4000Ks/4300Ks</h2>
+        </div>
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(bb1)1.jpg" width="250px" height="300px">
+            <h2>Blackberry fruit<br>(ဘရက်ရ်ဘယ်ရီသီး)<br>Juice/Soda<br>4400Ks/4900Ks</h2>
+        </div>
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(ly)1.jpg" width="250px" height="300px">
+            <h2>Lychee fruit<br>(လိုင်ချီးသီး)<br>Juice/Soda<br>3800Ks/4000Ks</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(li).jpg" width="250px" height="300px">
+            <h2>Lime fruit<br>(သံပုရာသီး)<br>Juice/Soda<br>3000Ks/4300Ks</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/wine(grape1).jpg" width="250px" height="300px">
+            <h2>Grapes Wine<br>(စပျစ်ဝိုင်)<br>2002-2012<br>US$ 518</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/wine(rs).jpg" width="250px" height="300px">
+            <h2>Rose Wine<br>(နှင်းဆီဝိုင်)<br>2015-2022<br>US$17.10</h2>
+        </div>
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/Nihonshu (Sake).jpg" width="250px" height="300px">
+            <h2>Nihonshu (Sake)<br>(ဆာကေး)<br>US$ 12.39</h2>
+        </div>
+
+    </div>
+
+    <div class="fordiv">
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(ba).jpg" width="250px" height="300px">
+            <h2>Banana fruit<br>(ငှက်ပျောသီး)<br>Juice<br>3000Ks</h2>
+        </div>
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(pp).jpg" width="250px" height="300px">
+            <h2>Papaya fruit<br>(သင်္ဘောသီး)<br>Juice<br>4000Ks</h2>
+        </div>
+        
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(dw)1.jpg" width="250px" height="300px">
+            <h2>Dew fruit<br>(သခွားမွှေးသီး)<br>Juice<br>4400Ks</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(wm).jpg" width="250px" height="300px">
+            <h2>Watermelon fruit<br>(ဖရဲသီး)<br>Juice/Soda<br>4500Ks/5200Ks</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(tl).jpg" width="250px" height="300px">
+            <h2>Pomegranate fruit<br>(သလဲသီး)<br>Juice/Soda<br>4200Ks/4900Ks</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(rb)1.jpg" width="250px" height="300px">
+            <h2>Redberry fruit<br>(ရက်စ်ဘယ်ရီသီး)<br>Juice/Soda<br>4400Ks/4900Ks</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(ss)1.jpg" width="250px" height="300px">
+            <h2>Star fruit<br>(ဇောင်းခါးသီး)<br>Juice/Soda<br>4400Ks/4700Ks</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/juice(le).jpg" width="250px" height="300px">
+            <h2>Lemon fruit<br>(သံပုယိုသီး)<br>Soda<br>4500Ks</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/wine(gr).jpg" width="250px" height="300px">
+            <h2>Grapes Wine<br>(စပျစ်ဝိုင်)<br>2001-2008<br>US$ 490</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/wine(Taung Za Latt).jpg" width="250px" height="300px">
+            <h2>Taung Za Latt Wine<br>(တောင်ဇလပ်ဝိုင်)<br>2017-2020<br>39000Ks</h2>
+        </div>
+
+        <div class="fordiv2">
+            <img src="image/for project/for drinks/Palm juice.jpg" width="250px" height="300px">
+            <h2>Palm juice<br>(ထန်းရည်)<br>5000Ks</h2>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

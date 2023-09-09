@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>   
+     
+    <head>
+        <title>Japanese Food</title>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+            body{box-sizing: border-box;
+                    background-image: url(image/j1.jpg); 
+                    background-position: center; background-repeat: no-repeat;
+                    background-size: cover;
+                    width: auto; height: 100%;}
+
+    .flex-container{display: flex; justify-content: space-around; flex-direction: row;}
+
+                    @media(max-width: 800px){
+    .flex-container{display: flex; justify-content: space-around; flex-direction: column;
+                    background-image: url(image/j1.jpg); 
+                    background-position: center; background-repeat: no-repeat;
+                    background-size: cover; width: auto; height: 100%;}
+                    }
+                   
+    .fordiv        {display: flex; flex-direction: column; margin: 90px 0px 0px 15px}
+
+    .fordiv2       {display: flex; flex-direction: row;  margin: 10px 0px;
+                    border: 2px solid rgb(17, 4, 4); background-color: rgb(221, 218, 218);
+                    border-radius: 0px 20px 20px 0px; height: 300px;}
+
+            h2{padding: 50px 0px 50px 10px; color: rgb(0, 0, 0);}
+
+    .container     {width: 100%; text-align: justify; margin: auto;}
+
+    .header        {padding: 0px;
+                    font-weight: bold; text-align: center;
+                    background-color: rgb(94, 91, 91); color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    letter-spacing: 1px; opacity: 0.8;
+                    margin: 0; top:0; left: 0;
+                    width: 100%; float: right; position: fixed; 
+                    overflow: visible;}
+
+    .header a      {float: right; font-size: 25px;
+                    color: white; text-align: center; margin: 0px 5px;
+                    padding: 15px 30px 20px 30px; text-decoration: none;}
+
+    .dropdown      {float: right; overflow: hidden;}
+
+.dropdown .dropbtn {cursor: pointer; font-size: 25px;  
+                    border: none; outline: none;
+                    color: white; padding: 15px 30px 20px 30px;
+                    background-color: inherit; font-family: inherit;
+                    margin: 0px 5px;}
+
+.dropdown-content  {display: none; position: absolute;
+                    background-color: #f9f9f9; min-width: 145px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+
+.dropdown-content a{float: none; color: black;
+                    padding: 12px 16px; text-decoration: none;
+                    display: block; text-align: left;}
+
+    .show          {margin:60px 5px 0px 5px; display: block;}
+
+                ul {margin-right: 10px;}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.header a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {background-color: rgb(54, 50, 50);}
+
+    </style>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <ul>
+                    <img src="image/gh4.png" alt="treasure net" width="150px" height="55px">
+                    <a href="contact.html">Contact</a>
+                    <a href="fpabout.html">About</a>
+                    <a href="booking.html">Booking</a>
+        
+                    <div class="dropdown">
+                            <a class="dropbtn" onclick="myFunction()">Menu<i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content" id="myDropdown">
+                           <a href="fpmenu1.html">Food</a><hr>
+                           <a href="fpdrink1.html">Drinks</a>
+                        </div>
+                    </div>
+                        
+                    <a href="index.html">Home</a>
+                </ul>                
+            </div>
+          </div>
+    
+    <script>
+    
+        function myFunction() {document.getElementById("myDropdown").classList.toggle("show");}
+    
+        window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');}}
+                  }}
+    
+    </script>
+    
+    <div class="flex-container">
+        <div class="fordiv">
+
+            <div class="fordiv2">    
+                <img src="image/for project/for japanese/ranen.jpg" width="250px" height="300px">
+                <h2>Ramen<br>(ကြက်/ဝက်/အမဲ)<br>4500Ks/4800Ks/5000Ks</h2>
+            </div>
+
+            <div class="fordiv2">    
+                <img src="image/for project/for japanese/Edi fry.jpg" width="250px" height="300px">
+                <h2>Edi Fry<br>4500Ks</h2>
+            </div>
+
+            <div class="fordiv2">    
+                <img src="image/for project/for japanese/sushi set2.jpg"  width="250px" height="300px">
+                <h2>Sushi Set<br>(ပွဲသေး/ပွဲကြီး)<br>18000Ks/23000Ks</h2>
+            </div>
+
+            <div class="fordiv2">    
+                <img src="image/for project/for japanese/Hanami Dango.jpg"  width="250px" height="300px">
+                <h2>Hanami Dango<br>6600Ks</h2>       
+            </div>
+
+        </div>  
+        
+        <div class="fordiv">
+
+            <div class="fordiv2">    
+                <img src="image/for project/for japanese/Unadon.jpg" width="250px" height="300px">
+                <h2>Unadon<br>5500Ks</h2>
+            </div>
+
+            <div class="fordiv2">    
+                <img src="image/for project/for japanese/Takoyaki.jpg" width="250px" height="300px">
+                <h2>Takoyaki<br>(ပုဇွန်/ရေဘဝဲ/ဂဏန်းချောင်း)<br>4000Ks/4300Ks/3800Ks</h2>
+            </div>
+
+            <div class="fordiv2">    
+                <img src="image/for project/for japanese/Temaki2.jpg" width="250px" height="300px">
+                <h2>Temaki<br>7800Ks</h2>
+            </div>
+
+            <div class="fordiv2">    
+                <img src="image/for project/for japanese/Mochi.jpg" width="250px" height="300px">
+                <h2>Mochi<br>7200Ks</h2>
+            </div>
+
+        </div>
+
+        <div class="fordiv">
+            
+            <div class="fordiv2">    
+                <img src="image/for project/for japanese/Tonkatsu.jpg" width="250px" height="300px">
+                <h2>Tonkatsu<br>(ကြက်/ဝက်/အမဲ)<br>4800Ks/5000Ks/5500Ks</h2>
+            </div>
+
+            <div class="fordiv2">    
+                <img src="image/for project/for japanese/sashimi.jpg" width="250px" height="300px">
+                <h2>Sashimi<br>12000Ks</h2>
+            </div>
+
+            <div class="fordiv2">    
+                <img src="image/for project/for japanese/Onigiri2.jpg" width="250px" height="300px">
+                <h2>Onigiri<br>5800Ks</h2>
+            </div>
+
+            <div class="fordiv2">    
+                <img src="image/for project/for japanese/Taiyaki2.jpg" width="250px" height="300px">
+                <h2>Taiyaki<br>8500Ks</h2>
+            </div>
+
+        </div>
+    </div>       
+    </body>
+</html>
