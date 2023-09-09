@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<htmL>    
+    <head>
+        <title>Chinese Food</title>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <style>
+                body{box-sizing: border-box;
+                    background-image: url(image/ch1.jpg); 
+                    background-position: center; background-repeat: no-repeat;
+                    background-size: cover;
+                    width: auto; height: 100%;}
+
+    .flex-container{display: flex; justify-content: space-around; flex-direction: row;}
+
+                    @media(max-width: 800px){
+    .flex-container{display: flex; justify-content: space-around; flex-direction: column;
+                    background-image: url(image/ch1.jpg); 
+                    background-position: center; background-repeat: no-repeat;
+                    background-size: cover; width: auto; height: 100%;}
+                    }
+
+    .fordiv        {display: flex; flex-direction: column; margin: 90px 0px 0px 10px}
+
+    .fordiv2       {display: flex; flex-direction: row;  margin: 10px 0px;
+                    border: 2px solid rgb(212, 143, 15); background-color: rgb(221, 218, 218);
+                    border-radius: 0px 20px 20px 0px; height: 300px;}
+
+                    h2{padding: 50px 0px 50px 10px; color: rgb(0, 0, 0);}
+
+    .container      {width: 100%; text-align: justify; margin: auto;}
+
+    .header        {padding: 0px;
+                    font-weight: bold; text-align: center;
+                    background-color: rgb(94, 91, 91); color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    letter-spacing: 1px; opacity: 0.8;
+                    margin: 0; top:0; left: 0;
+                    width: 100%; float: right; position: fixed; 
+                    overflow: visible;}
+
+    .header a      {float: right; font-size: 25px;
+                    color: white; text-align: center; margin: 0px 5px;
+                    padding: 15px 30px 20px 30px; text-decoration: none;}
+
+    .dropdown      {float: right; overflow: hidden;}
+
+.dropdown .dropbtn {cursor: pointer; font-size: 25px;  
+                    border: none; outline: none;
+                    color: white; padding: 15px 30px 20px 30px;
+                    background-color: inherit; font-family: inherit;
+                    margin: 0px 5px;}
+
+.dropdown-content   {display: none; position: absolute;
+                    background-color: #f9f9f9; min-width: 145px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+
+.dropdown-content a {float: none; color: black;
+                    padding: 12px 16px; text-decoration: none;
+                    display: block; text-align: left;}
+
+    .show           {margin:60px 5px 0px 5px; display: block;}
+
+                    ul  {margin-right: 10px;}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.header a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {background-color: rgb(54, 50, 50);}
+   </style>
+    <body>
+        <div class="header">
+            <div class="container">
+                <ul>
+                    <img src="image/gh4.png" alt="treasure net" width="150px" height="55px">
+                    <a href="contact.html">Contact</a>
+                    <a href="fpabout.html">About</a>
+                    <a href="booking.html">Booking</a>
+        
+                    <div class="dropdown">
+                            <a class="dropbtn" onclick="myFunction()">Menu<i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="fpmenu1.html">Food</a><hr>
+                            <a href="fpdrink1.html">Drinks</a>
+                        </div>
+                    </div>
+                            
+                    <a href="index.html">Home</a>
+                </ul>                
+            </div>
+        </div>
+    
+    <script>
+    
+          function myFunction() {document.getElementById("myDropdown").classList.toggle("show");}
+    
+          window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                  var dropdowns = document.getElementsByClassName("dropdown-content");
+                  var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');}}
+                  }}
+    
+    </script>
+    
+    <div class="flex-container"> 
+
+        <div class="fordiv">
+
+            <div class="fordiv2">    
+                <img src="image/for project/for chinese/ကြေးအိုး.jpg" width="250px" height="300px">
+                <h2>ကြေးအိုး<br>(ကြက်/ဝက်)<br>4300Ks/4500Ks</h2>
+            </div>
+            
+            <div class="fordiv2">
+                <img src="image/for project/for chinese/ခပေါက်စီ၂.jpg" width="250px" height="300px">
+                <h2>ပေါက်စီ<br>(ကြက်/ဝက်)<br>2800Ks/3000Ks</h2>
+            </div>
+            
+            <div class="fordiv2">
+                <img src="image/for project/for chinese/ခဘဲကင်၂.jpg" width="250px" height="300px">
+                <h2>ဘဲကင်<br>5700Ks</h2>
+            </div>
+
+            <div class="fordiv2">
+                <img src="image/for project/for chinese/ခမာလာရှမ်းကော2.jpg" width="250px" height="300px">
+                <h2>မာလာရှမ်းကော<br>(ကြက်/ဝက်/seafood)<br>4000Ks/4200Ks/4800Ks</h2>
+            </div>
+
+        </div>
+    
+        <div  class="fordiv">
+    
+            <div class="fordiv2">
+                <img src="image/for project/for chinese/ခဆီချက်ခေါက်ဆွဲ.jpg" width="250px" height="300px">
+                <h2>ဆီချက်ခေါက်ဆွဲ<br>(ကြက်/ဝက်)<br>4500Ks/4700Ks</h2>
+            </div>
+   
+            <div class="fordiv2">
+                <img src="image/for project/for chinese/ခဖက်ထုပ်ကြော်၂.jpg" width="250px" height="300px">
+                <h2>ဖက်ထုပ်ကြော်<br>(ကြက်/ဝက်)<br>3200Ks/3500Ks</h2>
+            </div>
+
+            <div class="fordiv2">
+                <img src="image/for project/for chinese/ခဝက်ကင်.jpg" width="250px" height="300px">
+                <h2>ဝက်ကင်<br>5500Ks</h2>
+            </div>
+               
+            <div class="fordiv2">
+                <img src="image/for project/for chinese/ခမာလာမောက်ချိုက်.jpg" width="250px" height="300px">
+                <h2>မာလာမောက်ချိုက်<br>(ကြက်/ဝက်/seafood)<br>4200Ks/4400Ks/5000Ks</h2>
+            </div>
+    
+
+        </div>
+
+        <div class="fordiv">
+
+            <div class="fordiv2">    
+                <img src="image/for project/for chinese/C1.jpg" width="250px" height="300px">
+                <h2>ခေါက်ဆွဲကြော်<br>(ကြက်/ဝက်)<br>3000Ks/3200Ks</h2>
+            </div>
+                                          
+            <div class="fordiv2">
+                <img src="image/for project/for chinese/ခဒင်းဆမ်း.jpg" width="250px" height="300px">
+                <h2>ဒင်းဆမ်း<br>(ကြက်/ဝက်/seafood)<br>2800Ks/3000Ks/3300Ks</h2>
+            </div>
+            
+            <div class="fordiv2">
+                <img src="image/for project/for chinese/ခမာလာငါးကင်2.jpg" width="250px" height="300px">
+                <h2>မာလာငါးကင်<br>6600Ks</h2>
+            </div>
+
+            <div class="fordiv2">
+                <img src="image/for project/for chinese/ခhotpot.jpg" width="250px" height="300px">
+                <h2>Hotpot Set<br>(ကြက်/ဝက်/seafood)<br>15000Ks/15000Ks/22000Ks</h2>
+            </div>
+ 
+        </div>
+    </div> 
+    </body>
+</htmL>

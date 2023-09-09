@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Menu</title>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+                html{box-sizing: border-box;}
+    
+    .flex-container{background-image: url(image/jay-wennington-N_Y88TWmGwA-unsplash.jpg); 
+                    background-position: center; background-repeat: no-repeat;
+                    background-size: cover; width: auto; height: 15vh;
+                    background-color: rgb(207, 191, 171);}
+       
+    .borderdiv     {margin: 420px 10px 0px 75px; width: 300px; height: 250px;
+                    border: 2px double rgb(255, 255, 255);}
+
+    .fordiv        {display: flex; flex-direction: row;}
+
+
+    .forlink       {text-decoration: none; margin: 5px 50px 0px 50px; 
+                    font-size: 25px; font-family: monospace;
+                    color: black;}
+             button{margin: 20px 0px 0px 0px; width: 300px; background-color:#FCEBD9;
+                   border-radius: 10px;}
+
+    .container     {width: 100%; text-align: justify; margin: auto;}
+
+    .header        {padding: 0px;
+                    font-weight: bold; text-align: center;
+                    background-color: rgb(94, 91, 91); color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    letter-spacing: 1px; opacity: 0.8;
+                    margin: 0; top:0; left: 0;
+                    width: 100%; float: right; position: fixed; 
+                    overflow: visible;}
+
+    .header a      {float: right; font-size: 25px;
+                    color: white; text-align: center; margin: 0px 5px;
+                    padding: 15px 30px 20px 30px; text-decoration: none;}
+
+    .dropdown      {float: right; overflow: hidden;}
+
+.dropdown .dropbtn {cursor: pointer; font-size: 25px;  
+                    border: none; outline: none;
+                    color: white; padding: 15px 30px 20px 30px;
+                    background-color: inherit; font-family: inherit;
+                    margin: 0px 5px;}
+
+.dropdown-content   {display: none; position: absolute;
+                    background-color: #f9f9f9; min-width: 145px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+
+.dropdown-content a {float: none; color: black;
+                    padding: 12px 16px; text-decoration: none;
+                    display: block; text-align: left;}
+
+    .show           {margin:60px 5px 0px 5px; display: block;}
+
+                ul  {margin-right: 10px;}
+
+    .active         {background: #c2c2c2;}
+
+.dropdown-content a:hover {background-color: #ffffff;}
+    
+.header a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {background-color: rgb(54, 50, 50);}
+    </style>    
+
+<body class="flex-container">
+    <div class="header">
+        <div class="container">
+          <ul>
+            <img src="image/gh4.png" alt="treasure net" width="150px" height="55px">
+            <a href="contact.html">Contact</a>
+            <a href="fpabout.html">About</a>
+            <a href="booking.html">Booking</a>
+
+                <div class="dropdown active">
+                    <a class="dropbtn" onclick="myFunction()">Menu<i class="fa fa-caret-down"></i></a>
+                      <div class="dropdown-content" id="myDropdown">
+                          <a href="fpmenu1.html">Food</a><hr>
+                          <a href="fpdrink1.html">Drinks</a>
+                      </div>
+                </div>
+                    
+            <a href="index.html">Home</a>
+          </ul>                
+        </div>
+      </div>
+
+    <script>
+
+        function myFunction() {document.getElementById("myDropdown").classList.toggle("show");}
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');}}
+              }}
+
+    </script>
+
+    <main>
+        <div class="fordiv">
+            <div class="borderdiv">
+            <img src="image/for project/for background/Myanmar food.jpg" width="300px" height="250px">
+            <button><a class="forlink" href="fpmyanmarmenu.html">Burmese Food</a></button>
+             </div>
+            
+            <div class="borderdiv">
+            <img src="image/for project/for background/Chinese food.jpg" width="300px" height="250px">
+            <button><a class="forlink" href="fpchinesemenu.html">Chinese Food</a></button>
+            </div>
+    
+            <div class="borderdiv">
+            <img src="image/for project/for background/Thai food3.jpg" width="300px" height="250px">
+            <button><a class="forlink" href="fpthailandmenu.html">Thai Food</a></button>
+            </div>
+
+            <div class="borderdiv">
+            <img src="image/for project/for background/Japn food.jpg" width="300px" height="250px">
+            <button><a class="forlink" href="fpjapanesemenu.html">Japanese Food</a></button>
+            </div>
+        </div>
+    </main> 
+
+</body>
+</html>
